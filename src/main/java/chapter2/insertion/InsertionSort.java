@@ -3,11 +3,16 @@ package chapter2.insertion;
 import java.util.Arrays;
 
 /**
+ * 插入排序
  * @author aixiaobai
  * @date 2020/8/3 23:40
  */
 public class InsertionSort {
 
+    /**
+     * Time Complexity : O(n^2)
+     * Space Complexity : O(1)
+     */
     public void solution(int[] array) {
         if (array == null || array.length < 2) {
             return;
@@ -17,7 +22,6 @@ public class InsertionSort {
             int tmp = array[i];
             while (j > 0 && array[j] > tmp) {
                 array[j + 1] = array[j];
-                System.out.println(Arrays.toString(array));
                 j--;
             }
             array[j + 1] = tmp;
