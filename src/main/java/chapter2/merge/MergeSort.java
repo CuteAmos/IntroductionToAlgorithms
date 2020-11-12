@@ -37,6 +37,9 @@ public class MergeSort {
         }
     }
 
+    /**
+     * Time Complexity : O(n*lgn)
+     */
     public void mergeSort(int[] array, int p, int r) {
         if (p < r) {
             int q = (p + r) / 2;
